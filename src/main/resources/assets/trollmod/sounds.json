@@ -1,0 +1,11 @@
+{
+  "flasbanged": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "trollmod:flash_bang_sound_effect",
+        "stream": false
+      }
+    ]
+  }
+}

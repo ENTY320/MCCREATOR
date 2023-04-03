@@ -1,0 +1,255 @@
+{
+  "mod_elements": [
+    {
+      "name": "BoommondBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boommond_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BoommondRedstoneOn",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boommond_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Boommond",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boommond"
+    },
+    {
+      "name": "NukeOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuke_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nuke",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuke"
+    },
+    {
+      "name": "Flash",
+      "type": "particle",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flash"
+    },
+    {
+      "name": "FlashbangProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashbang_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flashbang",
+      "type": "rangeditem",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashbang"
+    },
+    {
+      "name": "Flashbanged",
+      "type": "musicdisc",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashbanged"
+    },
+    {
+      "name": "FlasbangCommandExecuted",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flasbang_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flasbang",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flasbang"
+    },
+    {
+      "name": "CitybombRedstoneOn",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "citybomb_redstone_on",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Citybomb",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "citybomb"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "flasbanged",
+      "files": [
+        "flash_bang_sound_effect"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.flasbanged": "",
+      "block.trollmod.citybomb": "Citybomb",
+      "block.trollmod.nuke": "Nuke",
+      "item.trollmod.flashbang": "Flashbang",
+      "item.trollmod.flashbanged": "Flashbanged",
+      "block.trollmod.boommond": "Boommond",
+      "item.trollmod.flashbanged.desc": "flashbang sound"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "trollmod",
+    "modName": "trollmod",
+    "version": "1.0.0",
+    "author": "gergy, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.trollmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

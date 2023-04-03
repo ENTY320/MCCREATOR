@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "trollmod:blocks/letoltes",
+    "up": "trollmod:blocks/tnttop",
+    "north": "trollmod:blocks/tntkor",
+    "east": "trollmod:blocks/tntkor",
+    "south": "trollmod:blocks/tntkor",
+    "west": "trollmod:blocks/tntkor",
+    "particle": "trollmod:blocks/letoltes"
+  }
+}
