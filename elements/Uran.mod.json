@@ -2,12 +2,12 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "letoltes",
-    "textureTop": "tnttop",
-    "textureLeft": "tntkor",
-    "textureFront": "tntkor",
-    "textureRight": "tntkor",
-    "textureBack": "tntkor",
+    "texture": "hozzavalok_ore",
+    "textureTop": "hozzavalok_ore",
+    "textureLeft": "hozzavalok_ore",
+    "textureFront": "hozzavalok_ore",
+    "textureRight": "hozzavalok_ore",
+    "textureBack": "hozzavalok_ore",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,27 +32,27 @@
         "subtract": false
       }
     ],
-    "name": "Citybomb",
+    "name": "Uran",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 1.9999999999999998,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "MISC"
+      "value": "BUILDING_BLOCKS"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "Blocks.CAVE_AIR"
+      "value": "CUSTOM:Uranitem"
     },
-    "dropAmount": 1,
+    "dropAmount": 5,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": true,
+    "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "TNT"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -61,7 +61,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "MAGENTA",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -121,23 +121,22 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByExplosion": {
-      "name": "CitybombRedstoneOn"
-    },
-    "onRedstoneOn": {
-      "name": "CitybombRedstoneOn"
-    },
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE"
       }
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "minGenerateHeight": -64,
+    "maxGenerateHeight": 30
   }
 }

@@ -196,7 +196,24 @@
       "locked_code": false,
       "registry_name": "citybomb_redstone_on",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -206,6 +223,66 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "citybomb"
+    },
+    {
+      "name": "CityCommandExecuted",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "City",
+      "type": "command",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city"
+    },
+    {
+      "name": "Nukerecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nukerecipe"
+    },
+    {
+      "name": "Uranitem",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranitem"
+    },
+    {
+      "name": "Uran",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uran"
     }
   ],
   "variable_elements": [],
@@ -221,13 +298,15 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.flasbanged": "",
-      "block.trollmod.citybomb": "Citybomb",
-      "block.trollmod.nuke": "Nuke",
       "item.trollmod.flashbang": "Flashbang",
-      "item.trollmod.flashbanged": "Flashbanged",
+      "block.trollmod.nuke": "Nuke",
       "block.trollmod.boommond": "Boommond",
-      "item.trollmod.flashbanged.desc": "flashbang sound"
+      "item.trollmod.flashbanged.desc": "flashbang sound",
+      "block.trollmod.citybomb": "Citybomb",
+      "subtitles.flasbanged": "",
+      "item.trollmod.uranitem": "Uran",
+      "item.trollmod.flashbanged": "Flashbanged",
+      "block.trollmod.uran": "Uran"
     }
   },
   "foldersRoot": {

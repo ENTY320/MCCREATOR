@@ -17,6 +17,7 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
+import net.mcreator.trollmod.world.features.ores.UranFeature;
 import net.mcreator.trollmod.world.features.ores.BoommondFeature;
 import net.mcreator.trollmod.TrollmodMod;
 
@@ -31,6 +32,8 @@ public class TrollmodModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> BOOMMOND = register("boommond", BoommondFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BoommondFeature.GENERATE_BIOMES, BoommondFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> URAN = register("uran", UranFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, UranFeature.GENERATE_BIOMES, UranFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

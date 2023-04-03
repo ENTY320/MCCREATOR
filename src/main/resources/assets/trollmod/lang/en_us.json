@@ -1,9 +1,11 @@
 {
-  "subtitles.flasbanged": "",
-  "block.trollmod.citybomb": "Citybomb",
-  "block.trollmod.nuke": "Nuke",
   "item.trollmod.flashbang": "Flashbang",
-  "item.trollmod.flashbanged": "Flashbanged",
+  "block.trollmod.nuke": "Nuke",
   "block.trollmod.boommond": "Boommond",
-  "item.trollmod.flashbanged.desc": "flashbang sound"
+  "item.trollmod.flashbanged.desc": "flashbang sound",
+  "block.trollmod.citybomb": "Citybomb",
+  "subtitles.flasbanged": "",
+  "item.trollmod.uranitem": "Uran",
+  "item.trollmod.flashbanged": "Flashbanged",
+  "block.trollmod.uran": "Uran"
 }

@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
@@ -48,9 +49,13 @@ public class CitybombBlock extends Block {
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		if (world.getBestNeighborSignal(pos) > 0) {
-			CitybombRedstoneOnProcedure.execute(
-
-			);
+			CitybombRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		}
+	}
+
+	@Override
+	public void wasExploded(Level world, BlockPos pos, Explosion e) {
+		super.wasExploded(world, pos, e);
+		CitybombRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "trollmod:blocks/hozzavalok_ore",
+    "up": "trollmod:blocks/hozzavalok_ore",
+    "north": "trollmod:blocks/hozzavalok_ore",
+    "east": "trollmod:blocks/hozzavalok_ore",
+    "south": "trollmod:blocks/hozzavalok_ore",
+    "west": "trollmod:blocks/hozzavalok_ore",
+    "particle": "trollmod:blocks/hozzavalok_ore"
+  }
+}
